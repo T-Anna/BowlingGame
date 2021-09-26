@@ -12,7 +12,7 @@ namespace BowlingGame
 
         public List<Roll> TranslateInputToRollList()
         {
-            var rollList = new List<Roll>();
+            List<Roll> rollList = new List<Roll>();
             int currentFrameNumber = 1; 
 
             for (int i = 0; i < Input.Length; i++)
@@ -40,7 +40,7 @@ namespace BowlingGame
                 return null;
             }
 
-            var currentRoll = new Roll();
+            Roll currentRoll = new Roll();
 
             if (currentCharacter == '-')
             {

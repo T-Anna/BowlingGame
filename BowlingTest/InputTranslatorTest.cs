@@ -23,7 +23,7 @@ namespace BowlingTest
 
             string input = "X X X X X X X X X X X X";
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollListAfterTranslation = newTranslator.TranslateInputToRollList();
+            List<Roll> rollListAfterTranslation = newTranslator.TranslateInputToRollList();
 
             rollListAfterTranslation.Should().BeEquivalentTo(expectedRollList);
         }
@@ -42,7 +42,7 @@ namespace BowlingTest
 
             string input = "-- -- -- -- -- -- -- -- -- --";
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollListAfterTranslation = newTranslator.TranslateInputToRollList();
+            List<Roll> rollListAfterTranslation = newTranslator.TranslateInputToRollList();
 
             rollListAfterTranslation.Should().BeEquivalentTo(expectedRollList);
         }
@@ -70,7 +70,7 @@ namespace BowlingTest
 
             string input = "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5";
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollListAfterTranslation = newTranslator.TranslateInputToRollList();
+            List<Roll> rollListAfterTranslation = newTranslator.TranslateInputToRollList();
 
             rollListAfterTranslation.Should().BeEquivalentTo(expectedRollList);
         }
@@ -92,7 +92,7 @@ namespace BowlingTest
 
             string input = "9- 9- 9- 9- 9- 9- 9- 9- 9- 9-";
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollListAfterTranslation = newTranslator.TranslateInputToRollList();
+            List<Roll> rollListAfterTranslation = newTranslator.TranslateInputToRollList();
 
             rollListAfterTranslation.Should().BeEquivalentTo(expectedRollList);
         }
@@ -134,7 +134,7 @@ namespace BowlingTest
 
             string input = "-- 1- X 3- 4/ X X 7- -8 9/ 7";
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollListAfterTranslation = newTranslator.TranslateInputToRollList();
+            List<Roll> rollListAfterTranslation = newTranslator.TranslateInputToRollList();
 
             rollListAfterTranslation.Should().BeEquivalentTo(expectedRollList);
         }

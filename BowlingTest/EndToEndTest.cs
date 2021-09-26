@@ -1,5 +1,6 @@
 using Xunit;
 using BowlingGame;
+using System.Collections.Generic;
 
 namespace BowlingTest
 {
@@ -14,7 +15,7 @@ namespace BowlingTest
         public void ProgramCalculatesResultCorrectlyGivenExampleData(string input, int expectedResult)
         {
             InputTranslator newTranslator = new InputTranslator(input);
-            var rollsInGame = newTranslator.TranslateInputToRollList();
+            List<Roll> rollsInGame = newTranslator.TranslateInputToRollList();
 
             Game newGame = new Game(rollsInGame);
             int result = newGame.CalculateResult();
