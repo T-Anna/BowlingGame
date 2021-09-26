@@ -5,6 +5,8 @@ namespace BowlingGame
 {
     public class InputTranslator
     {
+        private string Input { get; set; }
+
         public InputTranslator(string input)
         {
             Input = input;
@@ -70,7 +72,5 @@ namespace BowlingGame
                 currentRoll.IsBonusRoll = true;
             }
         }
-
-        private string Input { get; set; }
     }
 }

@@ -4,6 +4,8 @@ namespace BowlingGame
 {
     public class Game
     {
+        private List<Roll> RollsInGame { get; set; }
+
         public Game(List<Roll> rollsInGame)
         {
             RollsInGame = rollsInGame;
@@ -38,8 +40,5 @@ namespace BowlingGame
 
             return bonus;
         }
-
-        private List<Roll> RollsInGame { get; set; }
-
     }
 }
